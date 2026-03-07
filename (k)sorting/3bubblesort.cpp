@@ -4,13 +4,13 @@ int main()
 {
   int arr[5] = {3, 1, 5, 2, 8};
   int n = 5;
-  for (int i = 0; i < n; i++)
+  for (int i = n - 2; i > 0; i--)
   {
-    for (int j = n - 1; j > i; j--)
+    for (int j = 0; j <= i; j++)
     {
-      if (arr[j] > arr[j - 1])
+      if (arr[j] > arr[j + 1])
       {
-        swap(arr[j], arr[j - 1]);
+        swap(arr[j], arr[j + 1]);
       }
     }
   }
